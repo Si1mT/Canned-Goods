@@ -11,4 +11,5 @@ h3 = Retsept või midagi muud
 h4 = alapealkiri (koostisosad, valmistamine) või ripmenüü
 
 
-Veebilehe nimi "Canned Goods" kasutab kast1, 
+fuck HTML
+
