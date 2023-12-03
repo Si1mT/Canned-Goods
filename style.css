@@ -1,34 +1,181 @@
+/*Build-up*/
 body {
-    background-color: blanchedalmond;
+    background-color: rgb(253, 237, 213);
 }
 
-h1, h2, h3, h4, h5, h6 p {
+h1, h2, h3, h4, h5, h6, p, div {
     font-family: monospace;
     color:rgb(0, 0, 0);
+    z-index: 2;
 }
 
 h1 {
+    font-size: 48px;
+    font-weight: bold;
+
+    height: 58px;
+    margin-left: 11%;
+    text-align: left;
+
+}
+
+h2 {
     font-size: 36px;
+    font-weight: bold;
+
+    height: 58px;
+    margin-left: 11%;
+    text-align: left;
+
 }
 
+h3 {
+    font-size: 30px;
+    margin-left: 20px;
+    
+    text-align: left;
+}
+
+h4 {
+    font-size: 28px;
+    text-align: center;
+}
+
+div {
+    font-size: 28px;
+    text-align: center;
+}
+
+
+p {
+    font-size: 20px;
+    margin-left: 16px;
+    margin-right: 12px;
+    text-align: left;
+}
+
+.whitebg {
+    margin-right: 32px;
+    background-color: #ffffff;
+    border: 0.5px solid #000000;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+    margin-top: -30px;
+    margin-left: 4px;
+    
+}
+
+
+/*Punased kastid*/
 .karp1 {
-    height: 46px;
-    width: 80%;
 
-    transform: skew(12deg);
-    background: red;
-    padding: 10px;
-    border-radius: 5px;
-
-    margin-left: 10%;
-}
-
-.karp2 {
-    display: inline-block;
-    height: 30px;
+    width: 96%;
+    height: 60px;
+    z-index: 1;
+    
     transform: skew(10deg);
     background: red;
     padding: 10px;
     border-radius: 5px;
+    margin-left: 1%;
+}
 
+.karp2 {
+    height: 46px;
+    width: 215px;
+    z-index: 1;
+
+    transform: skew(8deg);
+    background: red;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 12px;
+
+  }
+
+  .karp3 {
+    font-size: 36px;
+    
+    z-index: 1;
+
+    height: 46px;
+    width: 96%;
+
+    transform: skew(8deg);
+    background: red;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: -96px;
+    margin-left: -4px;
+
+/*valge joon kastidele*/
+  }
+  .karp1::after, .karp2::after, .karp3::after{
+    content: "";
+    position: absolute;
+    width: 99.9%;
+    height: 5px;
+    transform: skew(5deg);
+    background-color: #ffffff;
+    border: 0.5px solid #000000;
+    bottom: 12%;
+    left: 0;
+  }
+
+  .karp2::after {
+    width: 99.3%;
+  }
+
+  .karp3::after {
+    width: 99.85%;
+  }
+
+
+/*grid*/
+  .kastid {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+  }
+
+/*sidebar menüü*/
+  .ripmenu {
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+    width: 210px;
+    margin-left: 22px;
+    margin-top: -30px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3)
+  }
+
+  .ripmenu-asi {
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #000000;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s;
+  }
+
+  .ripmenu-asi:hover {
+    background-color: #ddd;
+  }
+
+  .alamlist {
+    display: none;
+    font-size: 16px;
+    width: 250px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3)
+  }
+
+  .alamlist a {
+    display: block;
+    padding: 8px;
+    color: #000000;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+
+  .alamlist a:hover {
+    background-color: #ddd;
   }

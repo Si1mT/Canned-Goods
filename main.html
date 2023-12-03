@@ -1,41 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Canned Goods</title>
-        <link rel=stylesheet type=text/css href=style.css>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <title>Canned Goods</title>
+    <link rel=stylesheet type=text/css href=style.css>
+</head>
 
-    <body>
+<body>
+    <h1 class="karp1">Canned Goods</h1>
+    <h2 class="karp2">Retseptid</h2>
 
 
 
-        <div class="bg"></div>
+    <div class="kastid">
+        <div class="ripmenu">
+            <div class="ripmenu-asi" onclick="toggleSubMenu('sool')">Soolased</div>
+                <div class="alamlist" id="sool">
+                    <a href="#">Sub Option 1.1</a>
+                    <a href="#">Sub Option 1.2</a>
+                    <a href="#">Sub Option 1.3</a>
+                </div>
+
+            <div class="ripmenu-asi" onclick="toggleSubMenu('suhkur')">Magusad</div>
+                <div class="alamlist" id="suhkur">
+                    <a href="#">Sub Option 2.1</a>
+                    <a href="#">Sub Option 2.2</a>
+                    <a href="#">Sub Option 2.3</a>
+                </div>
+
+            <div class="ripmenu-asi" onclick="toggleSubMenu('purk')">Hoidised</div>
+                <div class="alamlist" id="purk">
+                    <a href="#">Sub Option 3.1</a>
+                    <a href="#">Sub Option 3.2</a>
+                    <a href="#">Sub Option 3.3</a>
+                </div>
+
+            <div class="ripmenu-asi" onclick="toggleSubMenu('meme')">Meemid</div>
+                <div class="alamlist" id="meme">
+                    <a href="#">Sub Option 4.1</a>
+                    <a href="#">Sub Option 4.2</a>
+                    <a href="#">Sub Option 4.3</a>
+                </div>
         
-        <h1 class="karp1">Canned Goods</h1>
-        <p>oi miks ma siia nii kirjutan</p>
-        <p>This is a paragraph with the "my-class" styles.</p>
-        <div>This is a div with the same styles.</div>
-        <br>
-        <p>kakaduud on huvitavad linnud, üldse ei meeldi sellepärast, et naljakas sõna on sees</p>
+        </div>
 
-        <h2 class="karp2">PAITHOOOOOOOON</h2>
-        <p>Bim-Bim, bam-bam</p>
+    <div>
+        <h2 class="karp3">Tere tulemast!</h2>
+        <div class="whitebg">
+            
+            <h3>elo</h3>
+            <p>asdasdaasd</p>
+        </div>
+    </div>
 
-        <a href="https://www.w3schools.com/html/html_attributes.asp" target="_blank">See suur abi mulle</a>
+    </div>
 
-        <h2>Pilt siit:</h2>
-        <p>
-        <img src=asd alt="Telephone: 54541010">
-        </p>
+<!--kasutasin chatGPT abi-->
+<script> 
+    function toggleSubMenu(subMenuId) {
+      var subMenu = document.getElementById(subMenuId);
+      subMenu.style.display = subMenu.style.display === 'block' ? 'none' : 'block';
+    }
 
-        <a href="about.html" target="_blank">Meist</a>
-        
+
+</script>
 
 
-    </body>
+    
+</body>
+
 
 
 </html>
