@@ -1,0 +1,34 @@
+body {
+    background-color: blanchedalmond;
+}
+
+h1, h2, h3, h4, h5, h6 p {
+    font-family: monospace;
+    color:rgb(0, 0, 0);
+}
+
+h1 {
+    font-size: 36px;
+}
+
+.karp1 {
+    height: 46px;
+    width: 80%;
+
+    transform: skew(12deg);
+    background: red;
+    padding: 10px;
+    border-radius: 5px;
+
+    margin-left: 10%;
+}
+
+.karp2 {
+    display: inline-block;
+    height: 30px;
+    transform: skew(10deg);
+    background: red;
+    padding: 10px;
+    border-radius: 5px;
+
+  }
