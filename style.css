@@ -180,3 +180,7 @@ p {
   .alamlist a:hover {
     background-color: #ddd;
   }
+
+  a {
+    text-decoration: none;
+  }
