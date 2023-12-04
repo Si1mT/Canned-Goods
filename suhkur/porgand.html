@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Canned Goods</title>
+    <link rel=stylesheet type=text/css href=../style.css>
+</head>
+
+<body>
+    <a href="../main.html">
+        <h1 class="karp1">Canned Goods</h1>
+    </a>
+    <h2 class="karp2">Retseptid</h2>
+
+
+
+    <div class="kastid">
+        <div class="ripmenu">
+            <div class="ripmenu-asi" onclick="toggleSubMenu('sool')">Soolased</div>
+                <div class="alamlist" id="sool">
+                    <a href="pardikoib.html">Pardikoib punase veini marinaadis</a>
+                    <a href="sealiha_peekon.html">Sealiha peekoni-juustu kattega</a>
+                    <a href="peet.html">Peedi-kikerherne kotletid</a>
+                </div>
+
+            <div class="ripmenu-asi" onclick="toggleSubMenu('salat')">Salatid</div>
+                <div class="alamlist" id="salat">
+                    <a href="kartulisalat.html">Kartulisalat</a>
+                    <a href="läätsesalat_fetaga.html">Läätsesalat fetaga</a>
+                    <a href="caprese_salat.html">Caprese salat</a>
+                </div>
+            
+            <div class="ripmenu-asi" onclick="toggleSubMenu('näks')">Näksid</div>
+                <div class="alamlist" id="näks">
+                    <a href="lavass.html">Külmsuituslõhe lavašširull</a>
+                    <a href="hummus.html">Avokaadohummus</a>
+                    <a href="quac.html">Quacamole</a>
+                </div>
+
+            <div class="ripmenu-asi" onclick="toggleSubMenu('suhkur')">Magusad</div>
+                <div class="alamlist" id="suhkur">
+                    <a href="porgand.html">Porgandikook toorjuustukreemiga</a>
+                    <a href="muff.html">Red velvet muffinid</a>
+                    <a href="vaarikas.html">Vaarika-kookose kook</a>
+                    <a href="toorj.html">Toorjuustu kook</a>
+                    <a href="moor.html">Moorapea, Kräsupea</a>
+                </div>
+
+            <div class="ripmenu-asi" onclick="toggleSubMenu('purk')">Hoidised</div>
+                <div class="alamlist" id="purk">
+                    <a href="#">Sub Option 3.1</a>
+                    <a href="#">Sub Option 3.2</a>
+                    <a href="#">Sub Option 3.3</a>
+                </div>
+
+            <div class="ripmenu-asi" onclick="toggleSubMenu('meme')">Meemid</div>
+                <div class="alamlist" id="meme">
+                    <a href="#">Sub Option 4.1</a>
+                    <a href="#">Sub Option 4.2</a>
+                    <a href="#">Sub Option 4.3</a>
+                </div>
+        
+        </div>
+
+    <div>
+        <h2 class="karp3">Porgandikook toorjuustukreemiga</h2>
+        <div class="whitebg">
+            
+            <h3>Vajalik</h3>
+            <p>2 cup jahu
+                <br>2tl soodat
+                <br>1tl soola
+                <br>1 ½ tl kaneeli
+                <br>295ml toiduõli (rapsi või päevalille)
+                <br>1 cup suhkrut
+                <br>1 cup pruuni suhkrut
+                <br>1tl vanilli
+                <br>4 muna
+                <br>300g riivitud porgandit
+                <br>Soovi korral 1 cup pekaanipähkleid ja  ½ cup rosinaid
+                 
+                <br><br>TOORJUUSTUKREEM:
+                <br>500g toorjuustu
+                <br>400ml vahukoort
+                <br>1dl tuhksuhkrut                                                                                                     
+                </p>
+            <h3>Valmistamine</h3>
+            <p>Sega omavahel kõik kuivained. Vahusta õli suhkruga ja lisa ükshaaval juurde munad, vahusta 
+                pisut veel. Sega juurde kuivainesegu ja viimasena porgandid ja rosinad ning tükeldatud 
+                pähklid. Vala ahjuplaadile ja küpseta 175 kraadi juures 35-45 minutit. Lase jahtuda.
+                Lõika kook pooleks, pane vahele toorjuustukreem ja peale samuti, kaunista pähklitega.
+                </p>               
+        </div>
+    </div>
+
+    </div>
+
+<!--kasutasin chatGPT abi-->
+<script> 
+    function toggleSubMenu(subMenuId) {
+      var subMenu = document.getElementById(subMenuId);
+      subMenu.style.display = subMenu.style.display === 'block' ? 'none' : 'block';
+    }
+
+
+</script>
+
+
+    
+</body>
+
+
+
+</html>

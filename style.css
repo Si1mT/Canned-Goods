@@ -41,6 +41,12 @@ h4 {
     text-align: center;
 }
 
+h5 {
+    font-size: 28px;
+    text-align: left;
+    margin-left: 24px;
+}
+
 div {
     font-size: 28px;
     text-align: center;
@@ -184,3 +190,10 @@ p {
   a {
     text-decoration: none;
   }
+
+  .poolpool {
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+
